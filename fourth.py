@@ -30,10 +30,35 @@ for item in list:
 print ("a lista elemeinek összege:")
 
 
-for item in range(10):
-    print(item)
+
+összeg = 0
+for item in list: 
+    if item < 0:
+        összeg += item
+
 összeg = 0
 for item in list: 
     if item > 0:
         összeg += item
-    
+
+összeg = 0
+for item in list: 
+    if item > 10:
+        összeg += 1
+
+print(round/len(list), 2)
+
+pos_lista = [ ]
+neg_lista = [ ]
+
+for item in list:
+    if item < 0:
+        pos_lista.append(item)
+    if item > 0:
+        neg_lista.append(item)
+print (pos_lista, neg_lista)
+
+for i in range(1, 11):
+    for j in range(i):
+        print(j+1, end = " ")
+    print()
